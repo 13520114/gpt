@@ -1,0 +1,1 @@
+npm i -D webpack webpack-cli babel-loader @babel/preset-react @babel/core
