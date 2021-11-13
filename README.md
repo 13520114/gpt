@@ -1,1 +1,2 @@
-npm i -D webpack webpack-cli babel-loader @babel/preset-react @babel/core
+npm init -y
+npm i -D webpack webpack-cli webpack-dev-server
