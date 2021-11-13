@@ -4,4 +4,9 @@ const student = {
   single: true
 };
 
+const anotherStudent = {
+  ...student,
+  gpa: 7.8
+}
+
 console.log(student);
