@@ -6,3 +6,4 @@ npm i -D sass sass-loader
 npm i -D postcss postcss-preset-env postcss-loader
 npm i -D @babel/preset-react
 npm i react react-dom
+npm i react-icons

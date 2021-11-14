@@ -5,6 +5,10 @@ let mode = process.env.NODE_ENV === "production" ? "production" : "development";
 module.exports = {
   mode: mode,
 
+  output: {
+    assetModuleFilename: "images/[hash][ext]"
+  },
+
   module: {
     rules: [
       {
@@ -17,11 +21,18 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: ""}
+          },
           "css-loader",
           "postcss-loader",
           "sass-loader"
         ]
+      },
+      {
+        test: /\.(png|svg)$/i,
+        type: "asset"
       }
     ]
   },
